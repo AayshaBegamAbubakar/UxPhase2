@@ -1,0 +1,147 @@
+<br>
+	
+	<br>
+	<div class="login-wrap">
+		<div class="login-html">
+	
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+			<label for="tab-1" class="tab">Sign In</label> 
+			<input id="tab-2" type="radio" name="tab" class="sign-up">
+			<label for="tab-2" class="tab">Sign Up</label>
+				<input id="tab-3"   type="radio" name="tab" class="reset">
+			  <label for="tab-3" class="tab">Reset Password</label>
+			<div class="login-form">
+				<form (ngSubmit)="onSubmit()" >
+				<div class="sign-in-htm">
+					 <br>
+					<br>
+					<div class="group">
+						<label for="userName" class="label">Username</label><br>
+						<input   type="text"  class="input" id="userName"  name="userName" [(ngModel)]="mentor.userName" required="required">
+
+					</div><br><br>
+					<div class="group">
+							<label for="password" class="label">Password</label><br>
+							<input  name="password" type="password" id="password"  [(ngModel)]="mentor.password" 
+								class="input" data-type="password" required="required" >
+								
+							
+						</div><br><br>
+ <br>
+						<div class="group">
+			<input type="submit" class="button" 	value="Sign In">
+						</div><br><br>
+						<div class="hr"></div>
+						<div class="foot-lnk">
+							<label for="tab-3">Forgot Password?</label>
+						</div>
+
+					</div>
+			</form>
+
+			<form (ngSubmit)="onSubmit()" >
+					<div class="sign-up-htm">
+
+						<div class="group">
+								<label for="userName" class="label">Username</label>
+								<input   type="text"  class="input" id="userName"  name="userName" [(ngModel)]="mentor.userName" required="required">
+		
+							</div>
+							<div class="group">
+									<label for="password" class="label">Password</label>
+									<input  name="password" type="password" id="password"  [(ngModel)]="mentor.password" 
+										class="input" data-type="password" required="required" >
+										
+									
+								</div>
+								<div class="group">
+										<label for="linkedInUrl" class="label">Share Yiour Linked In Profile </label>
+										<input  name="linkedInUrl" type="text" id="linkedInUrl"  [(ngModel)]="mentor.linkedInUrl" 
+											class="input"  required="required" >
+											
+										
+									</div>
+									<div class="group">
+											<label for="contactNumber" class="label">contactNumber </label>
+											<input  name="contactNumber" type="text" id="contactNumber"  [(ngModel)]="mentor.contactNumber" 
+												class="input"  required="required" >
+												
+											
+										</div>
+										<div class="group">
+												<label for="email" class="label">Email Id</label>
+												<input  name="email" type="email" id="email"  [(ngModel)]="mentor.email" 
+													class="input"  required="required" >
+													
+												
+											</div>
+											<div class="group">
+													<label for="regDateTime" class="label">Tutorial Date and Time</label>
+													<input  name="regDateTime" type="text" id="regDateTime"  [(ngModel)]="mentor.regDateTime" 
+														class="input"  required="required" >
+														
+													
+												</div>
+												<div class="group">
+														<label for="skills" class="label">Skills</label>
+														<input  name="skills" type="text" id="skills"  [(ngModel)]="mentor.skills" 
+															class="input"  required="required" >
+															
+														
+													</div>
+												
+			
+		
+ <br>
+						<div class="group">
+			<input type="submit" class="button" 	value="Sign Up">
+						</div>
+						<div class="hr"></div>
+						<div class="foot-lnk">
+							<label for="tab-1">Already Member?</label>
+						</div>
+
+					</div>
+				</form>
+				<form (ngSubmit)="onSubmit()" >
+					<div class="reset-htm">
+
+  
+      
+		
+	 
+						<br>
+						<div class="group">
+								<label for="userName" class="label">Username</label><br>
+								<input   type="text"  class="input" id="userName"  name="userName" [(ngModel)]="mentor.userName" required="required">
+		
+							</div>
+							<div class="group">
+									<label for="password" class="label">Password</label><br>
+									<input  name="password" type="password" id="password"  [(ngModel)]="mentor.password" 
+										class="input" data-type="password" required="required" >
+										
+									
+								</div>
+								<div class="group">
+									<label for="password" class="label"> Confirm Password</label><br>
+									<input  name="password" type="password" id="password"  [(ngModel)]="mentor.password" 
+										class="input" data-type="password" required="required" >
+										
+									
+								</div>
+		 <br>
+ <br>
+						<div class="group">
+			<input type="submit" class="button" 	value="Reset Password">
+						</div>
+						<div class="hr"></div>
+					
+
+					</div>
+				</form>
+			
+			</div>
+			
+		</div>
+	</div>

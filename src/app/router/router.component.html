@@ -1,0 +1,32 @@
+
+       <div>
+       <br><br><br>
+       <form (ngSubmit)="onSubmit()" >          
+          <div   class="wrap">
+               <div class="search">
+                    <input type="text" name="searchItem" [(ngModel)]="searchItem" id="searchItem"  class="searchTerm" placeholder="What are you looking for?">
+                  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                 </button>
+               </div>
+            </div>
+          </form>
+
+            <div align="right">
+                    <a [routerLink]="['/UserRegistration']"  class="button" routerLinkActive="active">Notifications</a>&nbsp;&nbsp;
+                    <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Login / Register as
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                              <a [routerLink]="['/UserRegistration']"class="dropdown-item"  routerLinkActive="active">User</a>
+                              <a [routerLink]="['/MentorRegistration']" class="dropdown-item" routerLinkActive="active">Mentor</a>
+                              <a [routerLink]="['/AdminRegistration']" class="dropdown-item"  routerLinkActive="active">Admin</a>
+                            </div>
+                          </div>
+   
+           
+           
+           
+         </div>
+        </div>

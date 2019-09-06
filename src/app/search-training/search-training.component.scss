@@ -1,0 +1,102 @@
+
+/* Add styles for application here */
+
+
+* {
+  box-sizing: border-box;
+ 
+}
+.margin{
+	 margin-right: 150px;
+  margin-left: 80px;
+ 
+}
+
+/* Style the header */
+header {
+ 
+  font-family: "Times New Roman", Times, serif;
+ 
+}
+
+
+.header {
+  overflow: hidden;
+ 
+  padding: 20px 10px;
+}
+
+
+
+
+
+.column{
+float: left;
+  width: 25%;
+  padding: 10px;
+  height:30px; 
+}
+
+article {
+ 
+   font-family: "Times New Roman", Times, serif;
+  
+  height: 800px; /* only for demonstration, should be removed */
+   size:5px;
+	  color:black;
+}
+#companyList{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+ 
+}
+
+#companyList td, #customers th {
+  border: 3px solid  aqua;
+  padding: 3px;
+  font-size: 30px;
+  height: 200px;
+}
+
+#companyList tr:nth-child(even){background-color:cadetblue;}
+#companyList tr:nth-child(odd){background-color:cadetblue;}
+
+#companyList tr:hover {background-color: #ddd;}
+
+#companyList th {
+  border: 3px solid  aqua;
+  text-align: left;
+  background-color: 	#00b8e6;
+  color: aqua;
+  font-size: 30px;
+  height: 100px;
+ 
+}
+
+img
+{
+	width:200px;
+	
+	 height:100px;
+	 margin-left:none;
+	 background-color: black;
+}
+
+
+h3{
+	color: blue;
+  font-size: 50px;
+  font-weight: bold;
+ 
+}
+.button {
+  padding: 15px 25px;
+  font-size: 20px;
+ 
+   color:white;
+ background-color:	#00b8e6;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
